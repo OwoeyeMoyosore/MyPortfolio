@@ -1,0 +1,59 @@
+.AppBar{
+    background: linear-gradient(130.36deg, #000000 0%, #272727 44.03%, #494949 99.99%, #727272 100%)!important;
+}
+.AboutMe{
+    background: linear-gradient(130.36deg, #000000 0%, #272727 44.03%, #494949 99.99%, #727272 100%)!important;
+    height: 30rem;
+    color: white;
+}
+.name {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 2rem;
+letter-spacing: 0.1em;
+
+color: #70FF00;
+}
+
+.grid{
+    /* padding: 5rem; */
+    height: 30rem;
+}
+.trapezium{
+    margin-block: auto!important;
+    padding-left: 5rem!important;
+    padding-top: 0;
+}
+.myPicture{
+    border-radius: 100%;
+    /* width: 25rem; */
+    height: 20rem;
+    width: auto;
+}
+.right{
+    margin-block: auto!important;
+}
+
+/* .trapezium {
+    border-bottom: 30px solid transparent;
+      border-Top: 30px solid transparent;
+      border-left: 180px solid #66B2ff;
+      height: inherit;
+      
+} */
+
+/* .trapezium {
+    width: 200px;
+    height: 100%;
+    background-color: #ccc;
+    border-bottom: 30px solid transparent;
+    border-Top: 30px solid transparent;
+      border-left: 180px solid #66B2ff;
+    transform: rotate(20deg);
+    overflow: hidden;
+  }
+  
+  .trapezium p {
+    transform: skew(-20deg);
+  } */

@@ -1,6 +1,9 @@
 
+import { Box, Toolbar } from '@mui/material';
 import './App.css';
 import { Greet,Person, PersonList } from './components/Greet';
+import Navbar from './components/Navbar';
+import AboutMe from './components/contents/AboutMe';
 
 
 function App() {
@@ -29,6 +32,12 @@ function App() {
   ]
   return (
     <div className="App">
+      <Navbar />
+      <Box component="main" sx={{  width: "100%"}}>
+        <Toolbar />
+        <AboutMe name="<Moyosore Owoeye />" role='Front-end Developer / UI Designer'/>
+      </Box>
+      {/* <AboutMe /> */}
       <Greet name="Moyosore" location='Lagos State' age={29} isLoggedIn={true} />
       <Person name={personName}/>
       <PersonList names={nameList} />

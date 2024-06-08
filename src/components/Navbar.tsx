@@ -7,7 +7,7 @@ const NavBar = () => {
 
   return (
     <>
-     <section className="fixed w-full h-full z-50">
+     <section className="fixed w-full  z-30">
      <div className="bg-[#1E1E1E]">
         <div className="max-w-7xl xl:px-[100px] md:px-32 px-8 mx-auto">
           <div className="flex justify-between items-center  py-6 md:justify-start md:space-x-10">

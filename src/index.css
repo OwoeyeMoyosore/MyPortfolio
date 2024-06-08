@@ -26,3 +26,10 @@ p, h1, div{
   @apply  text-sm font-medium text-[#919191] hover:text-red-900;
 }
 
+.next > path{
+  
+  stroke: gray !important;;
+}
+.formInput{
+  @apply bg-transparent border border-[#999999] text-[#999999] placeholder-[#999999] text-base focus:ring-green-500 focus:border-green-500 w-full p-[23px]
+}

@@ -21,44 +21,149 @@ import { ReactComponent as Typescript } from "../svg/typescript.svg";
 import { ReactComponent as Vue } from "../svg/vue.svg";
 import { ReactComponent as CSharp } from "../svg/c#.svg";
 import { ReactComponent as Oasis } from "../svg/oasis.svg";
-import {ReactComponent as Evoting} from "../svg/evoting-compressed.svg"
-import {ReactComponent as Merchant} from "../svg/merchant.svg"
+import { ReactComponent as Evoting } from "../svg/evoting-compressed.svg";
+import { ReactComponent as Merchant } from "../svg/merchant.svg";
+import { ReactComponent as MealManager } from "../svg/meal-manager.svg";
+import { ReactComponent as CIPMApplication } from "../svg/application-cipm.svg";
+import { ReactComponent as CIPMExam } from "../svg/exam-cipm.svg";
+import { ReactComponent as BulkSMS } from "../svg/bulk-sms.svg";
+import { ReactComponent as Chisom } from "../svg/chisom.svg";
+import { ReactComponent as Walure } from "../svg/chisom.svg";
+import { ReactComponent as Winnie } from "../svg/winnie.svg";
+import Pagination from "../custom/pagination";
+import { useState } from "react";
+import ContactForm from "./contactForm";
 
 const projects = [
   {
-    image: <Oasis className="w-full max-h-[327px] object-contain" />,
-    name: "OasisForte Healthcare Official Website",
-    description: "A website for a Healthcare company in the United Kingdom (UK) that creates Quality, reliable, and flexible Healthcare service accessible to people in their own homes.",
+    image: <Oasis className="w-full max-h-[327px]" />,
+    name: "OasisForte Healthcare Official Website (2024)",
+    description:
+      "A website for a Healthcare company in the United Kingdom (UK) that creates Quality, reliable, and flexible Healthcare service accessible to people in their own homes.",
     isGithub: true,
     github: "",
     liveDemo: "http://oasisfortehealthcare.co.uk",
-    stack: "React | Tailwind ",
+    stack: "React | Tailwind | JavaScript",
   },
   {
     image: <Evoting className="w-full max-h-[327px] object-contain" />,
-    name: "CIPM Evoting Portal",
-    description: "The first ever E-Voting application that allows CIPM Members to Nominate fellow members, Accept or Reject their Nominations, Cast Votes and Hold Successful Elections and View Results",
+    name: "CIPM Evoting Portal (2024)",
+    description:
+      "The first ever E-Voting application that allows CIPM Members to Nominate fellow members, Accept or Reject their Nominations, Cast Votes and Hold Successful Elections and View Results",
     isGithub: false,
     github: "",
     liveDemo: "https://evoting.cipmnigeria.org",
     stack: "React | AntDesign | Typescript ",
-    
   },
   {
     image: <Merchant className="w-full max-h-[327px] object-contain" />,
-    name: "Cyberpay Merchant",
+    name: "Cyberpay Merchant(2023)",
     description: "Payment processing service that allows merchants process payments and collections",
     isGithub: false,
     github: "",
     liveDemo: "https://merchant.cyberpay.ng",
     stack: "React | AntDesign | Typescript | SASS | Styled Components",
   },
+  {
+    image: <CIPMApplication className="w-full max-h-[327px] object-contain" />,
+    name: "CIPM Application Portal(2023)",
+    description: "An application portal for the only chartered body that regulate the practice of HR Professionals in Nigeria ",
+    isGithub: false,
+    github: "",
+    liveDemo: "https://application.cipmnigeria.org",
+    stack: "React | AntDesign | Typescript | SASS | Styled Components",
+  },
+  {
+    image: <MealManager className="w-full max-h-[327px] object-contain" />,
+    name: "Meal Manager(2023)",
+    description: "To enable CyberPay staff to order meals seamlessly and track payments for vendors",
+    isGithub: false,
+    github: "",
+    liveDemo: "http://meals.cyberspace.net.ng",
+    stack: "React | AntDesign | Typescript | SASS | Styled Components",
+  },
+  {
+    image: <Walure className="w-full max-h-[327px] object-contain" />,
+    name: "Walure Capital Official Website(2023)",
+    description: "To empower people with strategic consulting, tech training, talent outsourcing and business needs.",
+    isGithub: false,
+    github: "",
+    liveDemo: "https://walurecapital.com",
+    stack: "React | AntDesign | Typescript | SASS | Styled Components",
+  },
+  {
+    image: <BulkSMS className="w-full max-h-[327px] object-contain" />,
+    name: "CyberPay Bulk SMS",
+    description: "Reach thousands instantly with marketing campaigns, alerts, reminders, and notifications",
+    isGithub: false,
+    github: "",
+    liveDemo: "https://sms-portal.cyberpay.ng",
+    stack: "React | AntDesign | Typescript | SASS | Styled Components",
+  },
+  {
+    image: <CIPMExam className="w-full max-h-[327px] object-contain" />,
+    name: "CIPM Examination Portal",
+    description: "The Institute’s examinations portal to certify HR professionals",
+    isGithub: false,
+    github: "",
+    liveDemo: "http://exam.cipmnigeria.org",
+    stack: "React | AntDesign | Typescript | SASS | Styled Components",
+  },
+  {
+    image: <Chisom className="w-full max-h-[327px] object-contain" />,
+    name: "A UI/UX Designer Portfolio",
+    description: "Showcases designer's skills, creativity, and experience through detailed project case studies",
+    isGithub: false,
+    github: "",
+    liveDemo: "https://jacintachianumba.vercel.app",
+    stack: "React | AntDesign | Typescript | SASS | Styled Components",
+  },
+  {
+    image: <Winnie className="w-full max-h-[327px] object-contain" />,
+    name: "An Event Planner/Model Porfolio",
+    description: "Versatile professional in Event Management consulting, business development & social media",
+    isGithub: false,
+    github: "",
+    liveDemo: "https://omowunmiagbolade.netlify.app/",
+    stack: "React | AntDesign | Typescript | SASS | Styled Components",
+  },
 ];
+const experiences = [
+  {
+    role: "Software Developer - Cyberspace",
+    duration: "Jan 2023 - Present | Full -time | Lagos, Nigeria",
+  },
+  {
+    role: "Software Developer Intern - Cyberspace",
+    duration: "Mar 2022- Dec 2022 | Full -time | Lagos, Nigeria",
+  },
+  {
+    role: "UI/UX Design/Scrum Master Trainee - Africa Agility Foundation",
+    duration: "Mar 2022 - Mar 2022 | Part -time  | Lagos, Nigeria",
+  },
+  {
+    role: "Frontend Developer Trainee - Abocoders, Aspilos Foundation",
+    duration: "Oct 2021 - Dec 2021 | Contract | Abeokuta, Nigeria",
+  },
+];
+
 const MainContent = () => {
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const itemsPerPage: number = 6;
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+  };
+
+  const totalPages: number = Math.ceil(projects?.length / itemsPerPage);
+
+  // Get current items
+  const paginatedProjects = projects.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+
   return (
-    <main className="xl:px-[217px] md:px-32 px-8 lg:mt-32 mt-10 absolute z-20">
-      <div className="flex md:flex-row flex-col-reverse md:gap-20 gap-4 w-full relative">
-        <div className="md:w-2/3">
+    <main className="xl:px-[217px] md:px-16 lg:px-32 lg:mt-32 mt-10 absolute z-20">
+      <div className="flex lg:flex-row flex-col-reverse md:gap-20 gap-4 w-full relative">
+        <div className="lg:w-2/3">
           <h1 className="text-[#FFFFFF] font-bold text-[44px]">Hello 👋🏾</h1>
           <p className="text-[15px] text-[#999999] pt-6">
             {/* I am <span className="font-semibold">Owoeye Moyosore</span>, a detail-oriented  <span className="font-semibold">Frontend Developer</span> who loves building quality
@@ -101,7 +206,7 @@ const MainContent = () => {
             </a>
           </div>
         </div>
-        <div className="md:w-1/3 w-full">
+        <div className="lg:w-1/3 w-full">
           <MyPicture className="w-full h-full" />
         </div>
       </div>
@@ -134,10 +239,11 @@ const MainContent = () => {
         <p className="text-base text-[#999999] pt-6">
           {/* I am Moyosore, a detail-oriented Frontend Developer who loves building quality applications using JavaScript and its frameworks. I started my journey in 2022, after
           attending my first tech bootcamp with Utiva, a community I joined after studying computer science at the University of Nigeria. */}
-
-          I excel in designing and maintaining responsive websites that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and optimized code and utilizing cutting-edge development tools and techniques. <br /> I am also a team player who thrives in collaborating with cross-functional teams to produce outstanding web applications.
+          I excel in designing and maintaining responsive websites that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing
+          clean and optimized code and utilizing cutting-edge development tools and techniques. <br /> I am also a team player who thrives in collaborating with cross-functional
+          teams to produce outstanding web applications.
         </p>
-        <div className="mt-16 grid md:grid-cols-3 grid-cols-1 gap-8 h-full">
+        <div className="mt-16 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 h-full">
           {/* <div className="bg-[#222222] px-5 pb-8 max-w-[410px] rounded-lg">
               <Oasis className="w-full max-h-[327px] object-contain" />
 
@@ -156,13 +262,13 @@ const MainContent = () => {
        </div> */}
 
           {projects &&
-            projects.map((project, index) => (
+            paginatedProjects.map((project, index) => (
               <div className="bg-[#222222] px-5 pb-8 max-w-[410px] rounded-lg" key={index}>
                 {project.image}
                 <h3 className="font-bold text-xl text-[#C2C8CB]">{project.name}</h3>
                 <p className="pt-2 text-sm text-[#BFBFBF]">{project.description}</p>
                 <p className="pt-2 text-[#00D288]">{project.stack}</p>
-                <div className="flex py-6 gap-4">
+                <div className="flex pt-6 gap-4">
                   <a href={project.liveDemo} className="bg-[#00D288] text-base text-[#090909] py-2 px-4 cursor-pointer" target="_blank" rel="noreferrer">
                     Live Demo
                   </a>
@@ -174,6 +280,47 @@ const MainContent = () => {
                 </div>
               </div>
             ))}
+        </div>
+        <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={handlePageChange} />
+      </div>
+
+      <div className="mt-20 flex md:gap-5 md:flex-row flex-col items-start">
+        <div className="md:w-1/2">
+          <p className="font-bold text-3xl text-white ">Experience</p>
+        </div>
+
+        <div className=" flex flex-col md:gap-10 gap-6 md:w-1/2">
+          {experiences?.map((item, index) => (
+            <div key={index}>
+              <h2 className="font-medium md:text-xl text-lg text-[#FFFFFF]">{item.role}</h2>
+              <dd className="text-base text-[#999999] pt-2">{item.duration}</dd>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="mt-40 lg:px-[274px] md:px-32 px-8 lg:py-20 md:py-10 py-5 bg-[#222222]">
+        <p className="font-bold text-3xl text-white text-center">Let's Connect</p>
+        <ContactForm />
+      </div>
+
+      <hr className="mt-40 text-[#4D4D4D4D] border-[#4D4D4D4D] border" />
+
+      <div className="flex justify-between items-center font-medium text-sm text-[#C2C8CB] mt-7 md:flex-row flex-col mb-20">
+        <p>Thanks for visiting</p>
+        <div className=" flex gap-5">
+          <a href="https://github.com/OwoeyeMoyosore" target="_blank" rel="noreferrer">
+            <Github />
+          </a>
+          <a href="https://www.linkedin.com/in/moyosore-owoeye-b84894198/" target="_blank" rel="noreferrer">
+            <LinkedIn />
+          </a>
+          <a href="">
+            <Twitter />
+          </a>
+          <a href="mailto:moyosoreowoeye2000@gmail.com" className="relative">
+            <Mail />
+          </a>
         </div>
       </div>
     </main>

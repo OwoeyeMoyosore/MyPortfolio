@@ -9,8 +9,8 @@ const NavBar = () => {
     <>
      <section className="fixed w-full  z-30">
      <div className="bg-[#1E1E1E]">
-        <div className="max-w-7xl xl:px-[100px] md:px-32 px-8 mx-auto">
-          <div className="flex justify-between items-center  py-6 md:justify-start md:space-x-10">
+        <div className="max-w-7xl xl:px-[100px] md:px-16 lg:px-32 px-8 mx-auto">
+          <div className="flex justify-between items-center md:gap-4 py-6 md:justify-start lg:gap-10">
             <div className="flex justify-start lg:w-0 lg:flex-1">
               <a href="#">
                 <p className="text-[#C2C8CB]">Owoeye Moyosore</p>

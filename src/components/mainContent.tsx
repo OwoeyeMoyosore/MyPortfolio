@@ -161,7 +161,7 @@ const MainContent = () => {
   const paginatedProjects = projects.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
   return (
-    <main className="xl:px-[217px] md:px-16 lg:px-32 lg:mt-32 mt-10 absolute z-20">
+    <main className="xl:px-[217px] md:px-16 lg:px-32 px-8 lg:pt-32 pt-10 absolute z-20 ">
       <div className="flex lg:flex-row flex-col-reverse md:gap-20 gap-4 w-full relative">
         <div className="lg:w-2/3">
           <h1 className="text-[#FFFFFF] font-bold text-[44px]">Hello 👋🏾</h1>
@@ -211,7 +211,7 @@ const MainContent = () => {
         </div>
       </div>
 
-      <div className="text-center mt-20">
+      <div className="text-center mt-20" id="skills">
         <h2 className="font-medium text-2xl text-white">My skills</h2>
         <div className="flex flex-wrap md:mt-9 mt-4 gap-4 justify-center">
           <React className="" />

@@ -28,10 +28,10 @@ const projects = [
   {
     image: <Oasis className="w-full max-h-[327px] object-contain" />,
     name: "OasisForte Healthcare Official Website",
-    description: "Quality, reliable, and flexible Healthcare service accessible to people in their own homes",
+    description: "A website for a Healthcare company in the United Kingdom (UK) that creates Quality, reliable, and flexible Healthcare service accessible to people in their own homes.",
     isGithub: true,
     github: "",
-    liveDemo: "",
+    liveDemo: "http://oasisfortehealthcare.co.uk",
     stack: "React | Tailwind ",
   },
   {
@@ -42,6 +42,7 @@ const projects = [
     github: "",
     liveDemo: "https://evoting.cipmnigeria.org",
     stack: "React | AntDesign | Typescript ",
+    
   },
   {
     image: <Merchant className="w-full max-h-[327px] object-contain" />,
@@ -130,9 +131,11 @@ const MainContent = () => {
 
       <div className="mt-20">
         <h2 className="font-medium text-2xl text-white">My Projects</h2>
-        <p className="max-w-3xl text-base text-[#999999] pt-6">
-          I am Moyosore, a detail-oriented Frontend Developer who loves building quality applications using JavaScript and its frameworks. I started my journey in 2022, after
-          attending my first tech bootcamp with Utiva, a community I joined after studying computer science at the University of Nigeria.
+        <p className="text-base text-[#999999] pt-6">
+          {/* I am Moyosore, a detail-oriented Frontend Developer who loves building quality applications using JavaScript and its frameworks. I started my journey in 2022, after
+          attending my first tech bootcamp with Utiva, a community I joined after studying computer science at the University of Nigeria. */}
+
+          I excel in designing and maintaining responsive websites that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and optimized code and utilizing cutting-edge development tools and techniques. <br /> I am also a team player who thrives in collaborating with cross-functional teams to produce outstanding web applications.
         </p>
         <div className="mt-16 grid md:grid-cols-3 grid-cols-1 gap-8 h-full">
           {/* <div className="bg-[#222222] px-5 pb-8 max-w-[410px] rounded-lg">

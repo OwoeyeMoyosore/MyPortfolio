@@ -28,7 +28,7 @@ import { ReactComponent as CIPMApplication } from "../svg/application-cipm.svg";
 import { ReactComponent as CIPMExam } from "../svg/exam-cipm.svg";
 import { ReactComponent as BulkSMS } from "../svg/bulk-sms.svg";
 import { ReactComponent as Chisom } from "../svg/chisom.svg";
-import { ReactComponent as Walure } from "../svg/chisom.svg";
+import { ReactComponent as Walure } from "../svg/walure.svg";
 import { ReactComponent as Winnie } from "../svg/winnie.svg";
 import Pagination from "../custom/pagination";
 import { useState } from "react";
@@ -41,7 +41,7 @@ const projects = [
     description:
       "A website for a Healthcare company in the United Kingdom (UK) that creates Quality, reliable, and flexible Healthcare service accessible to people in their own homes.",
     isGithub: true,
-    github: "",
+    github: "https://github.com/OwoeyeMoyosore/OasisWeb",
     liveDemo: "http://oasisfortehealthcare.co.uk",
     stack: "React | Tailwind | JavaScript",
   },
@@ -113,8 +113,8 @@ const projects = [
     image: <Chisom className="w-full max-h-[327px] object-contain" />,
     name: "A UI/UX Designer Portfolio",
     description: "Showcases designer's skills, creativity, and experience through detailed project case studies",
-    isGithub: false,
-    github: "",
+    isGithub: true,
+    github: "https://github.com/OwoeyeMoyosore/chisomdesignerportfolio-",
     liveDemo: "https://jacintachianumba.vercel.app",
     stack: "React | AntDesign | Typescript | SASS | Styled Components",
   },
@@ -122,8 +122,8 @@ const projects = [
     image: <Winnie className="w-full max-h-[327px] object-contain" />,
     name: "An Event Planner/Model Porfolio",
     description: "Versatile professional in Event Management consulting, business development & social media",
-    isGithub: false,
-    github: "",
+    isGithub: true,
+    github: "https://github.com/OwoeyeMoyosore/CustomPortfolio",
     liveDemo: "https://omowunmiagbolade.netlify.app/",
     stack: "React | AntDesign | Typescript | SASS | Styled Components",
   },

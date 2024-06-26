@@ -89,7 +89,7 @@ const projects = [
     isGithub: false,
     github: "",
     liveDemo: "https://walurecapital.com",
-    stack: "React | AntDesign | Typescript | SASS | Styled Components",
+    stack: "HTML | Tailwind | PetiteVue",
   },
   {
     image: <BulkSMS className="w-full max-h-[327px] object-contain" />,
@@ -98,7 +98,7 @@ const projects = [
     isGithub: false,
     github: "",
     liveDemo: "https://sms-portal.cyberpay.ng",
-    stack: "React | AntDesign | Typescript | SASS | Styled Components",
+    stack: "React | MaterialUI | Typescript | SpringFilter",
   },
   {
     image: <CIPMExam className="w-full max-h-[327px] object-contain" />,
@@ -234,7 +234,7 @@ const MainContent = () => {
         </div>
       </div>
 
-      <div className="mt-20">
+      <div className="mt-20" id="projects">
         <h2 className="font-medium text-2xl text-white">My Projects</h2>
         <p className="text-base text-[#999999] pt-6">
           {/* I am Moyosore, a detail-oriented Frontend Developer who loves building quality applications using JavaScript and its frameworks. I started my journey in 2022, after
@@ -284,8 +284,9 @@ const MainContent = () => {
         <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={handlePageChange} />
       </div>
 
-      <div className="mt-20 flex md:gap-5 md:flex-row flex-col items-start">
-        <div className="md:w-1/2">
+      <div className="mt-20 flex md:gap-5 md:flex-row flex-col items-start " id="experience">
+        
+        <div className="md:w-1/2 ">
           <p className="font-bold text-3xl text-white ">Experience</p>
         </div>
 
@@ -299,7 +300,7 @@ const MainContent = () => {
         </div>
       </div>
 
-      <div className="mt-40 lg:px-[274px] md:px-32 px-8 lg:py-20 md:py-10 py-5 bg-[#222222]">
+      <div className="mt-40 lg:px-[274px] md:px-32 px-8 lg:py-20 md:py-10 py-5 bg-[#222222]" id="contact">
         <p className="font-bold text-3xl text-white text-center">Let's Connect</p>
         <ContactForm />
       </div>

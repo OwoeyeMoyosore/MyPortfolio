@@ -10,8 +10,8 @@ const ContactForm = () => {
     setIsDisabled(true);
 
     emailjs
-      .sendForm("ivordee001", "template_ae3jbnd", formRef.current!, {
-        publicKey: "wHS4ryfhhKrYevRxv",
+      .sendForm("service_2s5syai", "template_kv8nrvy", formRef.current!, {
+        publicKey: "SwAK-bLgnrzkm4rih",
       })
       .then(
         () => {

@@ -38,13 +38,13 @@ const NavBar = () => {
               <a href="#skills" className="nav-links">
               <span className="text-[#00D288]">#</span>Skills
               </a>
-              <a href="#" className="nav-links">
+              <a href="#projects" className="nav-links">
               <span className="text-[#00D288]">#</span>Projects
               </a>
-              <a href="#" className="nav-links">
+              <a href="#experience" className="nav-links">
               <span className="text-[#00D288]">#</span>Experience
               </a>
-              <a href="#" className="nav-links">
+              <a href="#contact" className="nav-links">
               <span className="text-[#00D288]">#</span>Contact
               </a>
           

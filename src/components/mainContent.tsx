@@ -174,7 +174,8 @@ const MainContent = () => {
           Since graduation, I've put my skills to the test and gained hands-on Frontend work experience by contributing to a couple of projects. I also frequently publish a
           variety of articles about my experiences as a <span className="font-semibold">Technical Writer</span> or on my hashnode blog and when I'm not doing any of these
           things, you'd find me with my chess board. */}
-            Hi, I'm <span className="font-bold">Owoeye Moyosore</span>, a front-end developer with a passion for innovation and creativity. I thrive in the fast-paced world of
+            {/* Hi, */}
+             I'm <span className="font-bold">Owoeye Moyosore</span>, a front-end developer with a passion for innovation and creativity. I thrive in the fast-paced world of
             web development, where new technologies and trends emerge every day. I love jumping on new opportunities to learn and grow, whether it's exploring new frameworks,
             experimenting with AI-powered tools, or diving into the latest design patterns. <br /> <br />
             With about <span className="font-semibold"> {presentYear-startYear}</span> years of experience in web development, I've honed my skills in HTML, CSS, JavaScript, React, Typescript, Vue,

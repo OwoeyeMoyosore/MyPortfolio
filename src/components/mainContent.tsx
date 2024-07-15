@@ -159,26 +159,28 @@ const MainContent = () => {
 
   // Get current items
   const paginatedProjects = projects.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+  const presentYear = new Date().getFullYear();
+  const startYear = 2019;
 
   return (
     <main className="xl:px-[217px] md:px-16 lg:px-32 px-8 lg:pt-32 pt-10 absolute z-20 ">
       <div className="flex lg:flex-row flex-col-reverse md:gap-20 gap-4 w-full relative">
-        <div className="lg:w-2/3">
+        <div className="lg:w-2/3" data-aos="fade-left" data-aos-duration="2000">
           <h1 className="text-[#FFFFFF] font-bold text-[44px]">Hello 👋🏾</h1>
-          <p className="text-[15px] text-[#999999] pt-6">
+          <p className="text-[15px] text-[#999999] pt-6" >
             {/* I am <span className="font-semibold">Owoeye Moyosore</span>, a detail-oriented  <span className="font-semibold">Frontend Developer</span> who loves building quality
           applications using JavaScript and its frameworks. I started my journey in 2022, after attending my first tech bootcamp with {" "}
           <span className="font-semibold">Utiva</span>, a community I joined after studying computer science at Federal University Oye Ekiti, Nigeria. <br /> <br />
           Since graduation, I've put my skills to the test and gained hands-on Frontend work experience by contributing to a couple of projects. I also frequently publish a
           variety of articles about my experiences as a <span className="font-semibold">Technical Writer</span> or on my hashnode blog and when I'm not doing any of these
           things, you'd find me with my chess board. */}
-            Hi, I'm <span className="font-semibold">Owoeye Moyosore</span>, a front-end developer with a passion for innovation and creativity. I thrive in the fast-paced world of
+            Hi, I'm <span className="font-bold">Owoeye Moyosore</span>, a front-end developer with a passion for innovation and creativity. I thrive in the fast-paced world of
             web development, where new technologies and trends emerge every day. I love jumping on new opportunities to learn and grow, whether it's exploring new frameworks,
             experimenting with AI-powered tools, or diving into the latest design patterns. <br /> <br />
-            With about <span className="font-semibold">5</span> years of experience in web development, I've honed my skills in HTML, CSS, JavaScript, React, Typescript, Vue,
+            With about <span className="font-semibold"> {presentYear-startYear}</span> years of experience in web development, I've honed my skills in HTML, CSS, JavaScript, React, Typescript, Vue,
             ASP.NET etc. I'm always on the lookout for ways to improve user experiences, optimize performance, and push the boundaries of what's possible in the browser. <br />{" "}
             <br />
-            When I'm not coding, you can find me reading about the latest developments in tech, attending web development meetups, trying on ways to link my skills with healthcare
+            When I'm not coding, you can find me reading about the latest developments in tech, making research on Artificial Intelligence and Machine Learning, attending web development meetups, trying on ways to link my skills with healthcare
             because I am very big on the human health, or tinkering with personal projects that showcase my creativity and problem-solving skills.
           </p>
           <div className="mt-8">
@@ -206,14 +208,14 @@ const MainContent = () => {
             </a>
           </div>
         </div>
-        <div className="lg:w-1/3 w-full">
+        <div className="lg:w-1/3 w-full" data-aos="fade-right" data-aos-duration="2000">
           <MyPicture className="w-full h-full" />
         </div>
       </div>
 
-      <div className="text-center mt-20" id="skills">
+      <div className="text-center mt-20" id="skills" data-aos='fade-up' data-aos-duration="2000">
         <h2 className="font-medium text-2xl text-white">My skills</h2>
-        <div className="grid lg:grid-cols-6 grid-cols-2 md:grid-cols-3 md:mt-9 mt-4 gap-4 justify-center">
+        <div className="grid lg:grid-cols-6 grid-cols-2 md:grid-cols-3 md:mt-9 mt-4 md:gap-4 gap-2 justify-center" data-aos='fade-right' data-aos-duration="2000">
           <React className="w-full" />
           <Vue className="w-full" />
           <Typescript className="w-full" />
@@ -234,7 +236,7 @@ const MainContent = () => {
         </div>
       </div>
 
-      <div className="mt-20" id="projects">
+      <div className="mt-20" id="projects" data-aos='fade-up' data-aos-duration="2000">
         <h2 className="font-medium text-2xl text-white">My Projects</h2>
         <p className="text-base text-[#999999] pt-6">
           {/* I am Moyosore, a detail-oriented Frontend Developer who loves building quality applications using JavaScript and its frameworks. I started my journey in 2022, after
@@ -243,7 +245,7 @@ const MainContent = () => {
           clean and optimized code and utilizing cutting-edge development tools and techniques. <br /> I am also a team player who thrives in collaborating with cross-functional
           teams to produce outstanding web applications.
         </p>
-        <div className="mt-16 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 h-full">
+        <div className="mt-16 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 h-full" >
           {/* <div className="bg-[#222222] px-5 pb-8 max-w-[410px] rounded-lg">
               <Oasis className="w-full max-h-[327px] object-contain" />
 
@@ -263,7 +265,7 @@ const MainContent = () => {
 
           {projects &&
             paginatedProjects.map((project, index) => (
-              <div className="bg-[#222222] px-5 pb-8 max-w-[410px] rounded-lg" key={index}>
+              <div className="bg-[#222222] px-5 pb-8 max-w-[410px] rounded-lg" key={index} data-aos='fade-left' data-aos-duration="1000">
                 {project.image}
                 <h3 className="font-bold text-xl text-[#C2C8CB]">{project.name}</h3>
                 <p className="pt-2 text-sm text-[#BFBFBF]">{project.description}</p>
@@ -285,12 +287,11 @@ const MainContent = () => {
       </div>
 
       <div className="mt-20 flex md:gap-5 md:flex-row flex-col items-start " id="experience">
-        
-        <div className="md:w-1/2 ">
+        <div className="md:w-1/2" data-aos='fade-right' data-aos-duration="2000">
           <p className="font-bold text-3xl text-white ">Experience</p>
         </div>
 
-        <div className=" flex flex-col md:gap-10 gap-6 md:w-1/2">
+        <div className=" flex flex-col md:gap-10 gap-6 md:w-1/2" data-aos='fade-left' data-aos-duration="2000">
           {experiences?.map((item, index) => (
             <div key={index}>
               <h2 className="font-medium md:text-xl text-lg text-[#FFFFFF]">{item.role}</h2>
@@ -300,7 +301,7 @@ const MainContent = () => {
         </div>
       </div>
 
-      <div className="mt-40 lg:px-[274px] md:px-32 px-8 lg:py-20 md:py-10 py-5 bg-[#222222]" id="contact">
+      <div className="mt-20 lg:px-[274px] md:px-32 px-8 lg:py-20 md:py-10 py-5 bg-[#222222]" id="contact" data-aos="fade-down">
         <p className="font-bold text-3xl text-white text-center">Let's Connect</p>
         <ContactForm />
       </div>
@@ -310,16 +311,16 @@ const MainContent = () => {
       <div className="flex justify-between items-center font-medium text-sm text-[#C2C8CB] mt-7 md:flex-row flex-col mb-20">
         <p>Thanks for visiting</p>
         <div className=" flex gap-5">
-          <a href="https://github.com/OwoeyeMoyosore" target="_blank" rel="noreferrer">
+          <a href="https://github.com/OwoeyeMoyosore" target="_blank" rel="noreferrer" title="Github">
             <Github />
           </a>
-          <a href="https://www.linkedin.com/in/moyosore-owoeye-b84894198/" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/moyosore-owoeye-b84894198/" target="_blank" rel="noreferrer" title="LinkedIn">
             <LinkedIn />
           </a>
           <a href="">
             <Twitter />
           </a>
-          <a href="mailto:moyosoreowoeye2000@gmail.com" className="relative">
+          <a href="mailto:moyosoreowoeye2000@gmail.com" className="relative" title="Github">
             <Mail />
           </a>
         </div>

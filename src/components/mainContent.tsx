@@ -213,24 +213,24 @@ const MainContent = () => {
 
       <div className="text-center mt-20" id="skills">
         <h2 className="font-medium text-2xl text-white">My skills</h2>
-        <div className="flex flex-wrap md:mt-9 mt-4 gap-4 justify-center">
-          <React className="" />
-          <Vue className="" />
-          <Typescript className="" />
-          <CSharp className="" />
-          <AspNet className="" />
-          <HTMLLogo className="" />
-          <Javascript className="" />
-          <CSS3 className="" />
-          <SASS className="" />
-          <Tailwind className="" />
-          <Material className="" />
-          <Antd className="" />
-          <Bootstrap className="" />
-          <ReactRouter className="" />
-          <SQL className="" />
-          <ReactQuery className="" />
-          <Redux className="" />
+        <div className="grid lg:grid-cols-6 grid-cols-2 md:grid-cols-3 md:mt-9 mt-4 gap-4 justify-center">
+          <React className="w-full" />
+          <Vue className="w-full" />
+          <Typescript className="w-full" />
+          <CSharp className="w-full" />
+          <AspNet className="w-full" />
+          <HTMLLogo className="w-full" />
+          <Javascript className="w-full" />
+          <CSS3 className="w-full" />
+          <SASS className="w-full" />
+          <Tailwind className="w-full" />
+          <Material className="w-full" />
+          <Antd className="w-full" />
+          <Bootstrap className="w-full" />
+          <ReactRouter className="w-full" />
+          <SQL className="w-full" />
+          <ReactQuery className="w-full" />
+          <Redux className="w-full" />
         </div>
       </div>
 

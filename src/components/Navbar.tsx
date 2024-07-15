@@ -91,24 +91,24 @@ const NavBar = () => {
               </div>
               <div className="mt-6">
                 <nav className="grid gap-y-8">
-                  <a href="#" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                  <a href="#" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" onClick={() => setOpen(!open)}>
                     {/* Heroicon name: outline/chart-bar */}
                     <span className="text-[#00D288]">#</span>About
                   </a>
-                  <a href="#" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                  <a href="#skills" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"  onClick={() => setOpen(!open)}>
                     {/* Heroicon name: outline/cursor-click */}
                     <span className="text-[#00D288]">#</span>Skills
                     
                   </a>
-                  <a href="#" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                  <a href="#projects" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" onClick={() => setOpen(!open)}>
                     {/* Heroicon name: outline/shield-check */}
                     <span className="text-[#00D288]">#</span>Projects
                   </a>
-                  <a href="#" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                  <a href="#experience" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" onClick={() => setOpen(!open)}>
                     {/* Heroicon name: outline/view-grid */}
                     <span className="text-[#00D288]">#</span>Experience
                   </a>
-                  <a href="#" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                  <a href="#contact" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" onClick={() => setOpen(!open)}>
                     {/* Heroicon name: outline/refresh */}
                     <span className="text-[#00D288]">#</span>Contact
                   </a>

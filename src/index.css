@@ -4,6 +4,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px !important;
+}
 
 :root, body , html{
   margin: 0;
@@ -23,7 +27,7 @@ p, h1, div{
   padding: 0;
 }
 .nav-links{
-  @apply  text-sm font-medium text-[#919191] hover:text-red-900;
+  @apply  text-sm font-medium text-[#919191] hover:text-green-500;
 }
 
 .next > path{

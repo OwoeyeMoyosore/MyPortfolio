@@ -27,7 +27,7 @@ p, h1, div{
   padding: 0;
 }
 .nav-links{
-  @apply  text-sm font-medium text-[#919191] hover:text-green-500;
+  @apply  text-sm font-medium text-[#919191] hover:text-[#00D288];
 }
 
 .next > path{
